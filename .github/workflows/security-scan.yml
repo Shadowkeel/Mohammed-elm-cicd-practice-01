@@ -16,7 +16,7 @@ jobs:
         uses: aquasecurity/trivy-action@v0.36.0
         with:
           scan-type: image
-          image-ref: ghcr.io/${{ github.repository }}:latest
+          image-ref: ghcr.io/shadowkeel/mohammed-elm-cicd-practice-01:latest
           format: table
           severity: CRITICAL
           exit-code: '1'
